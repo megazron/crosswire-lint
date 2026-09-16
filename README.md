@@ -2,7 +2,7 @@
 
 ![demo](docs/img/demo.gif)
 
-*Live CLI demo: real findings on the bundled demo workspace.*
+*Four commands of the CLI.*
 
 **Catch the cheap-to-detect ROS 2 bug classes before they cost you a lab day: physical-unit mismatches, cross-node interaction bugs, parameter misconfiguration, missing dependencies, and service contracts with no server.**
 

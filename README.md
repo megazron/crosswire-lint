@@ -1,5 +1,10 @@
 # CrossWire
 
+![demo](docs/img/demo.gif)
+
+*Live CLI demo: real findings on the bundled demo workspace.*
+
+
 **Catch the cheap-to-detect ROS 2 bug classes before they cost you a lab day: physical-unit mismatches, cross-node interaction bugs, parameter misconfiguration, missing dependencies, and service contracts with no server.**
 
 A static linter (with an optional live-graph cross-check) for a ROS 2 workspace. It reads your source, launch and config files, builds a model of the system, and reports the mistakes that compile fine, type-check fine, and then move the robot to the wrong place or leave a panel silently blank.

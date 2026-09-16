@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ros2-interaction-lint"
+version = "0.1.0"
+description = "Static and live linter for ROS 2 physical-unit, interaction, config, dependency and interface bugs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gaus Mohiuddin Sayyad", email = "maintainer@example.com" }]
+keywords = ["ros2", "linter", "static-analysis", "robotics", "units", "dds", "qos"]
+dependencies = ["pyyaml>=5.1"]
+
+[project.urls]
+Homepage = "https://github.com/megazron/ros2-interaction-lint"
+
+[project.scripts]
+ros2-lint = "ros2_interaction_lint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

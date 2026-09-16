@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="1000" height="560" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#6b7580"/></marker><marker id="af" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#b02a37"/></marker></defs>
+<text x="30" y="40" font-size="22" fill="#1f2933" text-anchor="start" font-weight="700">The topic graph, and the four ways it goes silent</text>
+<text x="30" y="64" font-size="13" fill="#6b7580" text-anchor="start" font-weight="400">Every box is a node; every arrow is a topic. Red is a bug the linter reports.</text>
+<rect x="40" y="110" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="56" y="138" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">talker</text>
+<text x="56" y="158" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">publisher</text>
+<rect x="40" y="250" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="56" y="278" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">talker</text>
+<text x="56" y="298" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">publisher</text>
+<rect x="40" y="390" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="56" y="418" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">(no one)</text>
+<text x="56" y="438" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">missing publisher</text>
+<rect x="740" y="110" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="756" y="138" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">listener</text>
+<text x="756" y="158" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">subscriber</text>
+<rect x="740" y="250" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="756" y="278" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">listener</text>
+<text x="756" y="298" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">subscriber</text>
+<rect x="740" y="390" width="220" height="62" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="756" y="418" font-size="15" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">listener</text>
+<text x="756" y="438" font-size="11.5" fill="#6b7580" text-anchor="start" font-weight="400">subscriber</text>
+<line x1="260" y1="141" x2="740" y2="141" stroke="#b02a37" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#af)"/>
+<text x="500" y="133.0" font-size="13" fill="#b02a37" text-anchor="middle" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">/scan  Float64</text>
+<text x="500" y="151.0" font-size="11.5" fill="#b02a37" text-anchor="middle" font-weight="400">BEST_EFFORT pub -&gt; RELIABLE sub: nothing arrives</text>
+<line x1="260" y1="281" x2="740" y2="281" stroke="#b02a37" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#af)"/>
+<text x="500" y="273.0" font-size="13" fill="#b02a37" text-anchor="middle" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">/cmd</text>
+<text x="500" y="291.0" font-size="11.5" fill="#b02a37" text-anchor="middle" font-weight="400">String published, Int32 subscribed: type mismatch</text>
+<line x1="260" y1="421" x2="740" y2="421" stroke="#b02a37" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#af)"/>
+<text x="500" y="413.0" font-size="13" fill="#b02a37" text-anchor="middle" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">/sensor_temp</text>
+<text x="500" y="431.0" font-size="11.5" fill="#b02a37" text-anchor="middle" font-weight="400">subscribed, nobody publishes: typo or missing remap</text>
+<rect x="40" y="480" width="220" height="50" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="56" y="510" font-size="13" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">any node</text>
+<rect x="740" y="480" width="220" height="50" rx="8" fill="#f5f8fa" stroke="#0b7285" stroke-width="2"/>
+<text x="756" y="510" font-size="13" fill="#1f2933" text-anchor="start" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">any node</text>
+<line x1="260" y1="505" x2="740" y2="505" stroke="#2b8a3e" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="500" y="497" font-size="13" fill="#2b8a3e" text-anchor="middle" font-weight="700" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">/joint_states  JointState</text>
+<text x="500" y="520" font-size="11.5" fill="#6b7580" text-anchor="middle" font-weight="400">matched type and QoS: fine</text>
+</svg>

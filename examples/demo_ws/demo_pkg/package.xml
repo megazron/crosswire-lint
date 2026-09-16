@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>demo_pkg</name>
+  <version>0.1.0</version>
+  <description>A deliberately buggy package for the ros2-interaction-lint demo.</description>
+  <maintainer email="maintainer@example.com">Gaus Mohiuddin Sayyad</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>example_interfaces</depend>
+  <!-- sensor_msgs is imported by talker.py but NOT declared here -->
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

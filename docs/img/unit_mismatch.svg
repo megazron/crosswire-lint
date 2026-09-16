@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+<rect width="1000" height="360" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#6b7580"/></marker><marker id="af" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#b02a37"/></marker></defs>
+<text x="30" y="40" font-size="22" fill="#1f2933" text-anchor="start" font-weight="700">A physical-unit mismatch the types cannot catch</text>
+<rect x="40" y="80" width="430" height="230" rx="8" fill="#fbe9eb" stroke="#b02a37" stroke-width="2"/>
+<text x="60" y="110" font-size="14" fill="#b02a37" text-anchor="start" font-weight="700">flagged</text>
+<text x="60" y="138" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">angle_deg = 90.0            # unit: deg</text>
+<text x="60" y="159" font-size="12.5" fill="#b02a37" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">q_rad = angle_deg           # &lt;- deg into a</text>
+<text x="60" y="180" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">                            #    rad name</text>
+<text x="60" y="201" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">js.position = [q_rad]       # position is</text>
+<text x="60" y="222" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">                            #    radians</text>
+<text x="60" y="243" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace"></text>
+<text x="60" y="264" font-size="12.5" fill="#b02a37" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">total_m = x_mm + reach_m    # mm + m in one</text>
+<text x="60" y="285" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">                            #    expression</text>
+<rect x="530" y="80" width="430" height="230" rx="8" fill="#e8f5ec" stroke="#2b8a3e" stroke-width="2"/>
+<text x="550" y="110" font-size="14" fill="#2b8a3e" text-anchor="start" font-weight="700">clean</text>
+<text x="550" y="138" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">import math</text>
+<text x="550" y="159" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">angle_deg = 90.0            # unit: deg</text>
+<text x="550" y="180" font-size="12.5" fill="#2b8a3e" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">q_rad = math.radians(angle_deg)</text>
+<text x="550" y="201" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">js.position = [q_rad]       # radians now</text>
+<text x="550" y="222" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace"></text>
+<text x="550" y="243" font-size="12.5" fill="#2b8a3e" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">total_m = x_mm / 1000.0 + reach_m</text>
+<text x="550" y="264" font-size="12.5" fill="#1f2933" text-anchor="start" font-weight="400" font-family="'Cascadia Code','Consolas','DejaVu Sans Mono',monospace">                            # both in m</text>
+<text x="30" y="345" font-size="12" fill="#6b7580" text-anchor="start" font-weight="400">Units come from a name suffix (_deg, _rad, _mm, _m) or a trailing '# unit:' comment; a conversion on the way clears the finding.</text>
+</svg>

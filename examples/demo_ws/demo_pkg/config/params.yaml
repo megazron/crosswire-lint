@@ -1,0 +1,8 @@
+talker:
+  ros__parameters:
+    rate_hz: 500.0          # out of the documented [1, 100] bounds
+    frame: "base_link"
+    unknown_param: 7        # set here, declared nowhere in code
+listener:
+  ros__parameters:
+    frame: "odom"           # same parameter, a different value than talker

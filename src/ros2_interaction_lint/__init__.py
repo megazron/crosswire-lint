@@ -1,4 +1,4 @@
-"""ros2-interaction-lint: catch the cheap-to-detect ROS 2 bug classes.
+"""crosswire-lint: catch the cheap-to-detect ROS 2 bug classes.
 
 A static (plus optional live) linter for physical-unit mismatches, cross-node
 interaction bugs, parameter misconfiguration, dependency-declaration gaps and

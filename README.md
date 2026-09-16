@@ -1,4 +1,4 @@
-# ros2-interaction-lint
+# CrossWire
 
 **Catch the cheap-to-detect ROS 2 bug classes before they cost you a lab day: physical-unit mismatches, cross-node interaction bugs, parameter misconfiguration, missing dependencies, and service contracts with no server.**
 
@@ -54,7 +54,7 @@ This tool takes the pragmatic middle path: it does **not** try to prove a system
 ## Install
 
 ```
-pip install git+https://github.com/megazron/ros2-interaction-lint
+pip install git+https://github.com/megazron/crosswire-lint
 ```
 
 ## Quickstart
@@ -101,7 +101,7 @@ With a ROS 2 graph running, this snapshots it with the `ros2` CLI (it never impo
 ## CI usage
 
 ```yaml
-- run: pip install git+https://github.com/megazron/ros2-interaction-lint
+- run: pip install git+https://github.com/megazron/crosswire-lint
 - run: ros2-lint src   # non-zero exit fails the job on any error-severity finding
 ```
 
@@ -109,7 +109,7 @@ Use `--severity warning` to fail on warnings too, or `--json` to feed another to
 
 ## Origin
 
-This grew out of a wearable dual-arm Kinova Gen3 supernumerary-limb project (MSc, Imperial College London), where a hard-won discipline around **physical units** and a **single source of truth** for every constant was the difference between a working digital twin and a robot commanded 57 times too far. Its siblings from the same work are [ros2-wsl-doctor](https://github.com/megazron/ros2-wsl-doctor) (the silent-delivery / DDS / WSL fault class at runtime) and [twin-truth](https://github.com/megazron/twin-truth) (one dated source of truth for physical constants). The parent project is [Multimodal control of a wearable dual-arm robotic system for assisted object manipulation](https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation).
+This grew out of a wearable dual-arm Kinova Gen3 supernumerary-limb project (MSc, Imperial College London), where a hard-won discipline around **physical units** and a **single source of truth** for every constant was the difference between a working digital twin and a robot commanded 57 times too far. Its siblings from the same work are [ddsdetective-ros2](https://github.com/megazron/ddsdetective-ros2) (the silent-delivery / DDS / WSL fault class at runtime) and [twin-truth](https://github.com/megazron/twin-truth) (one dated source of truth for physical constants). The parent project is [Multimodal control of a wearable dual-arm robotic system for assisted object manipulation](https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation).
 
 ## Limitations
 

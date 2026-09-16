@@ -36,7 +36,7 @@ def summary_counts(findings: list[Finding]) -> dict:
 
 def render_text(findings: list[Finding], root: str = "") -> str:
     lines: list[str] = []
-    header = f"ros2-interaction-lint  ({root})" if root else "ros2-interaction-lint"
+    header = f"crosswire-lint  ({root})" if root else "crosswire-lint"
     lines.append(header)
     lines.append("=" * len(header))
     if not findings:

@@ -4,7 +4,6 @@
 
 *Live CLI demo: real findings on the bundled demo workspace.*
 
-
 **Catch the cheap-to-detect ROS 2 bug classes before they cost you a lab day: physical-unit mismatches, cross-node interaction bugs, parameter misconfiguration, missing dependencies, and service contracts with no server.**
 
 A static linter (with an optional live-graph cross-check) for a ROS 2 workspace. It reads your source, launch and config files, builds a model of the system, and reports the mistakes that compile fine, type-check fine, and then move the robot to the wrong place or leave a panel silently blank.
@@ -111,10 +110,6 @@ With a ROS 2 graph running, this snapshots it with the `ros2` CLI (it never impo
 ```
 
 Use `--severity warning` to fail on warnings too, or `--json` to feed another tool.
-
-## Origin
-
-This grew out of a wearable dual-arm Kinova Gen3 supernumerary-limb project (MSc, Imperial College London), where a hard-won discipline around **physical units** and a **single source of truth** for every constant was the difference between a working digital twin and a robot commanded 57 times too far. Its siblings from the same work are [ddsdetective-ros2](https://github.com/megazron/ddsdetective-ros2) (the silent-delivery / DDS / WSL fault class at runtime) and [twin-truth](https://github.com/megazron/twin-truth) (one dated source of truth for physical constants). The parent project is [Multimodal control of a wearable dual-arm robotic system for assisted object manipulation](https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation).
 
 ## Limitations
 

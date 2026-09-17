@@ -9,7 +9,7 @@ description = "Static and live linter for ROS 2 physical-unit, interaction, conf
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Gaus Mohiuddin Sayyad", email = "maintainer@example.com" }]
+authors = [{ name = "Gaus Mohiuddin Sayyad" }]
 keywords = ["ros2", "linter", "static-analysis", "robotics", "units", "dds", "qos"]
 dependencies = ["pyyaml>=5.1"]
 

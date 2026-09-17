@@ -3,7 +3,7 @@
   <name>demo_pkg</name>
   <version>0.1.0</version>
   <description>A deliberately buggy package for the ros2-interaction-lint demo.</description>
-  <maintainer email="maintainer@example.com">Gaus Mohiuddin Sayyad</maintainer>
+  <maintainer email="maintainer@example.com">Demo Maintainer</maintainer>
   <license>MIT</license>
 
   <depend>rclpy</depend>
